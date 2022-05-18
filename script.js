@@ -1,6 +1,6 @@
 // creo arrey con oggetto lavoratori
 
-const myContainer = document.getElementsByClassName("team-container");
+const myContainer = document.querySelector("div .team-container");
 
 const arrayLavoratori = [
 
@@ -45,6 +45,8 @@ for(let i = 0; i < arrayLavoratori.length; i++){
 
     // creo gli elementi
 
+
+    
     const elementTeamCard = document.createElement("div");
     elementTeamCard.className = "team-card";
     console.log(elementTeamCard);
@@ -54,27 +56,30 @@ for(let i = 0; i < arrayLavoratori.length; i++){
     console.log(elementCardImage);
 
     const elementImg = document.createElement("img");
+    elementImg.append(arrayElementoIesi.foto);
     console.log(elementImg);
 
     const elementCardText = document.createElement("div");
     elementCardText.className = "card-text";
 
     const elementName = document.createElement("h3");
+    elementName.append(arrayElementoIesi.nome);
+    console.log(elementName);
+
 
     const elementRuolo = document.createElement("p");
-
-    //seleziono gli oggetti    
-
-    
-    
-
-   
-
-    
-
+    elementRuolo.append(arrayElementoIesi.ruolo);
+    console.log(elementRuolo);
     
 
     // appendo
+
+    myContainer.append(elementTeamCard);
+    elementTeamCard.append(elementCardImage);
+
+    myContainer.append(elementCardText);
+    elementCardText.append(elementName);
+    elementCardText.append(elementRuolo);
 
 
 
