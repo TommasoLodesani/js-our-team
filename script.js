@@ -1,37 +1,82 @@
 // creo arrey con oggetto lavoratori
 
+const myContainer = document.getElementsByClassName("team-container");
+
 const arrayLavoratori = [
 
     {
-        "Nome" : "Wayne Barnett",
-        "Ruolo" : "Founder & CEO",
-        "Foto" : "img/wayne-barnett-founder-ceo.jpg"
+        "nome" : "Wayne Barnett",
+        "ruolo" : "Founder & CEO",
+        "foto" : "img/wayne-barnett-founder-ceo.jpg"
     },
     {
-        "Nome" : "Angela Caroli",
-        "Ruolo" : "Chief Editor",
-        "Foto" : "img/angela-caroll-chief-editor.jpg"
+        "nome" : "Angela Caroli",
+        "ruolo" : "Chief Editor",
+        "foto" : "img/angela-caroll-chief-editor.jpg"
     },
     {
-        "Nome" : "Walter Gordon",
-        "Ruolo" : "Office Manager",
-        "Foto" : "img/walter-gordon-office-manager.jpg"
+        "nome" : "Walter Gordon",
+        "ruolo" : "Office Manager",
+        "foto" : "img/walter-gordon-office-manager.jpg"
     },
     {
-        "Nome" : "Angela Lopez",
-        "Ruolo" : "Social Media Manager",
-        "Foto" : "img/angela-lopez-social-media-manager.jpg"
+        "nome" : "Angela Lopez",
+        "ruolo" : "Social Media Manager",
+        "foto" : "img/angela-lopez-social-media-manager.jpg"
     },
     {
-        "Nome" : "Scott Estrada",
-        "Ruolo" : "Developer",
-        "Foto" : "img/scott-estrada-developer.jpg"
+        "nome" : "Scott Estrada",
+        "ruolo" : "Developer",
+        "foto" : "img/scott-estrada-developer.jpg"
     },
     {
-        "Nome" : "Barbara Ramos",
-        "Ruolo" : "Graphic Designer",
-        "Foto" : "img/barbara-ramos-graphic-designer.jpg"
+        "nome" : "Barbara Ramos",
+        "ruolo" : "Graphic Designer",
+        "foto" : "img/barbara-ramos-graphic-designer.jpg"
     }
 ];
 
-console.log(arrayLavoratori);
+// console.log(arrayLavoratori);
+
+for(let i = 0; i < arrayLavoratori.length; i++){
+    // console.log(arrayLavoratori[i]);
+
+    let arrayElementoIesi = arrayLavoratori[i];
+
+    // creo gli elementi
+
+    const elementTeamCard = document.createElement("div");
+    elementTeamCard.className = "team-card";
+    console.log(elementTeamCard);
+
+    const elementCardImage = document.createElement("div");
+    elementCardImage.className = "card-image";
+    console.log(elementCardImage);
+
+    const elementImg = document.createElement("img");
+    console.log(elementImg);
+
+    const elementCardText = document.createElement("div");
+    elementCardText.className = "card-text";
+
+    const elementName = document.createElement("h3");
+
+    const elementRuolo = document.createElement("p");
+
+    //seleziono gli oggetti    
+
+    
+    
+
+   
+
+    
+
+    
+
+    // appendo
+
+
+
+
+}
